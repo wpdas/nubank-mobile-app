@@ -11,6 +11,7 @@ import Header from '@components/Header';
 import Tabs from '@components/Tabs';
 import Menu from '@components/Menu';
 import AccountCard from '@components/AccountCard';
+import RewardsCard from '@components/RewardsCard';
 import {Container, Content, Cards} from './styles';
 
 export default function Main() {
@@ -98,7 +99,7 @@ export default function Main() {
               dotStyle={swiperStyles.dotStyle}
               activeDotStyle={swiperStyles.activeDotStyle}>
               <AccountCard />
-              <AccountCard />
+              <RewardsCard />
             </Swiper>
           </Cards>
         </PanGestureHandler>
