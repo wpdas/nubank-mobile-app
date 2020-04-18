@@ -1,10 +1,8 @@
 import React from 'react';
-import Icon from 'react-native-vector-icons/MaterialIcons';
+import Icon from 'react-native-vector-icons/SimpleLineIcons';
 
 import {Container, Top, Logo, Title} from './styles';
 import logo from '@assets/Nubank_Logo.png';
-
-Icon.loadFont();
 
 const Header: React.FC = () => {
   return (
@@ -13,7 +11,7 @@ const Header: React.FC = () => {
         <Logo source={logo} />
         <Title>Wenderson</Title>
       </Top>
-      <Icon name="keyboard-arrow-down" size={20} color="#FFF" />
+      <Icon name="arrow-down" size={12} color="#FFF" />
     </Container>
   );
 };

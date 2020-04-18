@@ -7,7 +7,7 @@ import './config/ReactotronConfig';
 
 const App: React.FC = () => (
   <>
-    <StatusBar barStyle="light-content" backgroundColor="#8b10ae" />
+    <StatusBar barStyle="light-content" backgroundColor="#832a9a" />
     <Routes />
   </>
 );
