@@ -24,13 +24,13 @@ const AccountCard = () => (
     </CardHeader>
     <CardContent>
       <Title>Saldo disponível</Title>
-      <Description>R$ 1.309,17</Description>
+      <Description>R$ 309,17</Description>
     </CardContent>
     <CardFooter>
       <AnnotationIconWrapper>
         <Icon name="arrow-down-circle" size={22} color="#8b10ae" />
       </AnnotationIconWrapper>
-      <Annotation>Transferência de R$ 1.160,00 recebida hoje</Annotation>
+      <Annotation>Transferência de R$ 20,00 recebida hoje</Annotation>
       <AnnotationIconWrapper>
         <Icon name="arrow-right" size={10} color="#4a4848" />
       </AnnotationIconWrapper>

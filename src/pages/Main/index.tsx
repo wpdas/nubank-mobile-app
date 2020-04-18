@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Animated, Easing, Platform, StyleSheet} from 'react-native';
 import {
   PanGestureHandler,
@@ -29,7 +29,13 @@ export default function Main() {
     {useNativeDriver: true},
   );
 
+  const [showCardsPagination, setShowCardsPagination] = useState<boolean>(true);
+
   const onHandlerStateChanged = (event: PanGestureHandlerStateChangeEvent) => {
+    if (event.nativeEvent.state === State.ACTIVE) {
+      setShowCardsPagination(false);
+    }
+
     if (event.nativeEvent.oldState === State.ACTIVE) {
       let opened = false;
       const {translationY} = event.nativeEvent;
@@ -53,6 +59,10 @@ export default function Main() {
         offset = opened ? range : 0;
         translateY.setOffset(offset);
         translateY.setValue(0);
+        console.log('Offset:', offset);
+        if (offset === 0) {
+          setShowCardsPagination(true);
+        }
       });
     }
   };
@@ -86,18 +96,20 @@ export default function Main() {
               transform: [
                 {
                   translateY: translateY.interpolate({
-                    inputRange: [-350, 0, 470], // Mov limit range
-                    outputRange: [-50, 0, 470], // Mov speed range
+                    inputRange: [-350, 0, 460], // Mov limit range
+                    outputRange: [-50, 0, 460], // Mov speed range
                     extrapolate: 'clamp',
                   }),
                 },
               ],
             }}>
             <Swiper
+              loop={false}
               containerStyle={swiperStyles.container}
               activeDotColor="#fff"
               dotStyle={swiperStyles.dotStyle}
-              activeDotStyle={swiperStyles.activeDotStyle}>
+              activeDotStyle={swiperStyles.activeDotStyle}
+              showsPagination={showCardsPagination}>
               <AccountCard />
               <RewardsCard />
             </Swiper>
