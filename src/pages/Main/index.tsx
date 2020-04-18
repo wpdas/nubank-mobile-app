@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import {Animated, Easing, Platform, StyleSheet} from 'react-native';
+import React, { useState } from 'react';
+import { Animated, Easing, Platform, StyleSheet } from 'react-native';
 import {
   PanGestureHandler,
   State,
@@ -12,7 +12,7 @@ import Tabs from '@components/Tabs';
 import Menu from '@components/Menu';
 import AccountCard from '@components/AccountCard';
 import RewardsCard from '@components/RewardsCard';
-import {Container, Content, Cards} from './styles';
+import { Container, Content, Cards } from './styles';
 
 export default function Main() {
   let offset = 0;
@@ -26,7 +26,7 @@ export default function Main() {
         },
       },
     ],
-    {useNativeDriver: true},
+    { useNativeDriver: true },
   );
 
   const [showCardsPagination, setShowCardsPagination] = useState<boolean>(true);
@@ -38,7 +38,7 @@ export default function Main() {
 
     if (event.nativeEvent.oldState === State.ACTIVE) {
       let opened = false;
-      const {translationY} = event.nativeEvent;
+      const { translationY } = event.nativeEvent;
 
       offset += translationY;
 

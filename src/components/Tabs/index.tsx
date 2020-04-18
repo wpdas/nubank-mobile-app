@@ -1,16 +1,16 @@
 import React from 'react';
-import {Animated} from 'react-native';
+import { Animated } from 'react-native';
 import Icon from 'react-native-vector-icons/SimpleLineIcons';
 
-import {Container, TabsContainer, TabItem, TabText} from './styles';
+import { Container, TabsContainer, TabItem, TabText } from './styles';
 
 interface TabsProps {
   translateY: Animated.Value;
 }
 
-const Tabs: React.FC<TabsProps> = ({translateY}) => {
+const Tabs: React.FC<TabsProps> = ({ translateY }) => {
   const adjustLimitStyle = {
-    transform: [{rotate: '-90deg'}],
+    transform: [{ rotate: '-90deg' }],
     marginTop: -56,
     marginLeft: -54,
   };

@@ -24,7 +24,7 @@ const RewardsCard = () => (
       </Description>
     </CardContent>
     <CardFooter>
-      <ActiveButton onPress={() => {}}>
+      <ActiveButton>
         <ActiveButtonText>ATIVE O SEU REWARDS</ActiveButtonText>
       </ActiveButton>
     </CardFooter>

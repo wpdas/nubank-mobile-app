@@ -1,5 +1,5 @@
 import React from 'react';
-import {Animated} from 'react-native';
+import { Animated } from 'react-native';
 import QRCode from 'react-native-qrcode-svg';
 import Icon from 'react-native-vector-icons/SimpleLineIcons';
 
@@ -21,7 +21,7 @@ interface MenuProps {
   translateY: Animated.Value;
 }
 
-const Menu: React.FC<MenuProps> = ({translateY}) => {
+const Menu: React.FC<MenuProps> = ({ translateY }) => {
   return (
     <Container
       style={{
@@ -82,7 +82,7 @@ const Menu: React.FC<MenuProps> = ({translateY}) => {
         </NavItem>
       </Nav>
 
-      <SignOutButton onPress={() => {}}>
+      <SignOutButton>
         <SignOutButtonText>SAIR DA CONTA</SignOutButtonText>
       </SignOutButton>
     </Container>
