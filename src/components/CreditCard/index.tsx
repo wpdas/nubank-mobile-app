@@ -4,6 +4,12 @@ import { ThemeContext } from 'styled-components';
 import CardContainer from '@components/CardContainer';
 import { ThemeValue } from '@theme';
 import {
+  CreditCardMainContent,
+  CreditCardInfoArea,
+  CreditCardUsageBar,
+  FutureExpenses,
+  CurrentExpenses,
+  CurrentLimit,
   CardHeader,
   IconContainer,
   IconText,
@@ -23,21 +29,34 @@ const CreditCard: React.FC = () => {
 
   return (
     <CardContainer>
-      <CardHeader>
-        <IconContainer>
-          <Icon name="credit-card" size={22} color={theme.tertiaryIconColor} />
-          <IconText>Cartão de crédito</IconText>
-        </IconContainer>
-      </CardHeader>
-      <CardContent>
-        <Title>FATURA ATUAL</Title>
-        <Description>
-          R$ <DescriptionStrong>1.439</DescriptionStrong>,17
-        </Description>
-        <SubTitle>
-          Limite disponível <SubTitleStrong>R$ 126,17</SubTitleStrong>
-        </SubTitle>
-      </CardContent>
+      <CreditCardMainContent>
+        <CreditCardInfoArea>
+          <CardHeader>
+            <IconContainer>
+              <Icon
+                name="credit-card"
+                size={22}
+                color={theme.tertiaryIconColor}
+              />
+              <IconText>Cartão de crédito</IconText>
+            </IconContainer>
+          </CardHeader>
+          <CardContent>
+            <Title>FATURA ATUAL</Title>
+            <Description>
+              R$ <DescriptionStrong>1.439</DescriptionStrong>,17
+            </Description>
+            <SubTitle>
+              Limite disponível <SubTitleStrong>R$ 126,17</SubTitleStrong>
+            </SubTitle>
+          </CardContent>
+        </CreditCardInfoArea>
+        <CreditCardUsageBar>
+          <FutureExpenses area={40} />
+          <CurrentExpenses area={40} />
+          <CurrentLimit area={20} />
+        </CreditCardUsageBar>
+      </CreditCardMainContent>
       <CardFooter>
         <AnnotationIconWrapper>
           <Icon name="cup" size={22} color={theme.primaryTextColor} />

@@ -21,7 +21,7 @@ export default function Main() {
   let offset = 0;
   const { current: theme } = useContext<ThemeValue>(ThemeContext);
   const [showCardsPagination, setShowCardsPagination] = useState<boolean>(true);
-  const range = Platform.OS === 'ios' ? 460 : 470;
+  const range = 460;
   const translateY = new Animated.Value(0);
   const animatedEvent = Animated.event(
     [
@@ -40,7 +40,7 @@ export default function Main() {
    */
   const onHandlerStateChanged = (event: PanGestureHandlerStateChangeEvent) => {
     if (event.nativeEvent.state === State.ACTIVE) {
-      setShowCardsPagination(false);
+      setShowCardsPagination(Platform.OS === 'ios' ? false : true);
     }
 
     if (event.nativeEvent.oldState === State.ACTIVE) {
@@ -96,7 +96,7 @@ export default function Main() {
         <PanGestureHandler
           onGestureEvent={animatedEvent}
           onHandlerStateChange={onHandlerStateChanged}
-          minDeltaY={20}>
+          minDeltaY={12}>
           <Cards
             style={{
               transform: [

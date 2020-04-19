@@ -1,8 +1,9 @@
-import { Platform } from 'react-native';
 import { Theme } from '.';
 
 const light: Theme = {
-  /* Nubank  background: #6d2177; */
+  nubankColor1: '#fdb834',
+  nubankColor2: '#00b3d9',
+  nubankColor3: '#97cb59',
   primaryColor: '#832a9a',
   secondaryColor: '#ffffff',
   tertiaryColor: '#f5f5f5',
@@ -12,15 +13,11 @@ const light: Theme = {
   primaryTextColor: '#333333',
   secondaryTextColor: '#ffffff',
   tertiaryTextColor: '#7e7e7e',
-  regularFont:
-    Platform.OS === 'ios' ? 'NunitoSans-Regular' : 'NunitoSans-Regular.ttf',
-  lightFont:
-    Platform.OS === 'ios' ? 'NunitoSans-Light' : 'NunitoSans-Light.ttf',
-  semiBoldFont:
-    Platform.OS === 'ios' ? 'NunitoSans-SemiBold' : 'NunitoSans-SemiBold.ttf',
-  boldFont: Platform.OS === 'ios' ? 'NunitoSans-Bold' : 'NunitoSans-Bold.ttf',
-  blackFont:
-    Platform.OS === 'ios' ? 'NunitoSans-Black' : 'NunitoSans-Black.ttf',
+  regularFont: 'NunitoSans-Regular',
+  lightFont: 'NunitoSans-Light',
+  semiBoldFont: 'NunitoSans-SemiBold',
+  boldFont: 'NunitoSans-Bold',
+  blackFont: 'NunitoSans-Black',
 };
 
 export default light;

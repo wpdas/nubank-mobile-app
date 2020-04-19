@@ -34,9 +34,13 @@ export const Title = styled.Text`
 `;
 
 export const Description = styled.Text`
+  margin: 4px 0;
   font-size: 32px;
-  margin-top: 2px;
+  height: 36px;
+  line-height: 40px;
   color: ${(props: ThemeProps) => props.theme.current.primaryTextColor};
+  margin-left: -2px;
+  font-family: ${(props: ThemeProps) => props.theme.current.semiBoldFont};
 `;
 
 export const CardFooter = styled.View`

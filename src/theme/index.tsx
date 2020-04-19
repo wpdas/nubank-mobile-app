@@ -3,6 +3,9 @@ import { ThemeProvider, ThemedStyledProps } from 'styled-components';
 import light from './light';
 
 export type Theme = {
+  readonly nubankColor1: string;
+  readonly nubankColor2: string;
+  readonly nubankColor3: string;
   readonly primaryColor: string;
   readonly secondaryColor: string;
   readonly tertiaryColor: string;
