@@ -1,21 +1,10 @@
 import styled from 'styled-components/native';
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
+import { ThemeProps } from '@theme';
 
 export const CardHeader = styled.View`
   align-items: center;
   padding: 25px;
-`;
-
-export const IconContainer = styled.View`
-  flex: 1;
-  align-items: center;
-  flex-direction: row;
-`;
-
-export const IconText = styled.Text`
-  font-size: 15px;
-  color: #898989;
-  margin-left: 16px;
 `;
 
 export const CardContent = styled.View`
@@ -26,10 +15,11 @@ export const CardContent = styled.View`
 
 export const Title = styled.Text`
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 900;
   text-align: center;
   margin-bottom: 8px;
-  color: #333;
+  color: ${(props: ThemeProps) => props.theme.current.primaryTextColor};
+  font-family: ${(props: ThemeProps) => props.theme.current.boldFont};
 `;
 
 export const Description = styled.Text`
@@ -38,7 +28,8 @@ export const Description = styled.Text`
   text-align: center;
   padding: 0 10%;
   line-height: 22px;
-  color: #333;
+  color: ${(props: ThemeProps) => props.theme.current.primaryTextColor};
+  font-family: ${(props: ThemeProps) => props.theme.current.regularFont};
 `;
 
 export const CardFooter = styled.View`
@@ -48,20 +39,9 @@ export const CardFooter = styled.View`
   justify-content: space-evenly;
 `;
 
-export const AnnotationIconWrapper = styled.View`
-  align-self: center;
-  margin: 0 16px;
-`;
-
-export const Annotation = styled.Text`
-  font-size: 13px;
-  color: #555;
-  width: 60%;
-`;
-
 export const ActiveButton = styled.TouchableOpacity`
   border-width: ${StyleSheet.hairlineWidth}px;
-  border-color: #832a9a;
+  border-color: ${(props: ThemeProps) => props.theme.current.primaryColor};
   border-radius: 4px;
   justify-content: center;
   align-items: center;
@@ -70,7 +50,8 @@ export const ActiveButton = styled.TouchableOpacity`
 `;
 
 export const ActiveButtonText = styled.Text`
-  color: #832a9a;
+  color: ${(props: ThemeProps) => props.theme.current.primaryColor};
   font-weight: bold;
   font-size: 13px;
+  font-family: ${(props: ThemeProps) => props.theme.current.blackFont};
 `;

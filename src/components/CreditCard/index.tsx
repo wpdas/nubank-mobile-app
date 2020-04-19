@@ -10,33 +10,40 @@ import {
   CardContent,
   Title,
   Description,
+  DescriptionStrong,
+  SubTitle,
+  SubTitleStrong,
   CardFooter,
   AnnotationIconWrapper,
   Annotation,
 } from './styles';
 
-const AccountCard: React.FC = () => {
+const CreditCard: React.FC = () => {
   const { current: theme } = useContext<ThemeValue>(ThemeContext);
 
   return (
     <CardContainer>
       <CardHeader>
         <IconContainer>
-          <Icon name="wallet" size={22} color={theme.tertiaryIconColor} />
-          <IconText>Conta</IconText>
+          <Icon name="credit-card" size={22} color={theme.tertiaryIconColor} />
+          <IconText>Cartão de crédito</IconText>
         </IconContainer>
-        <Icon name="eye" size={22} color={theme.tertiaryIconColor} />
       </CardHeader>
       <CardContent>
-        <Title>Saldo disponível</Title>
-        <Description>R$ 1.439,17</Description>
+        <Title>FATURA ATUAL</Title>
+        <Description>
+          R$ <DescriptionStrong>1.439</DescriptionStrong>,17
+        </Description>
+        <SubTitle>
+          Limite disponível <SubTitleStrong>R$ 126,17</SubTitleStrong>
+        </SubTitle>
       </CardContent>
       <CardFooter>
         <AnnotationIconWrapper>
-          <Icon name="arrow-down-circle" size={22} color={theme.primaryColor} />
+          <Icon name="cup" size={22} color={theme.primaryTextColor} />
         </AnnotationIconWrapper>
         <Annotation>
-          Transferência de R$ 20,00 recebida hoje de Dayane Gandos
+          Compra mais recente Starbucks Belo Horizonte no valor de R$ 12,86.
         </Annotation>
         <AnnotationIconWrapper>
           <Icon name="arrow-right" size={10} color={theme.tertiaryIconColor} />
@@ -46,4 +53,4 @@ const AccountCard: React.FC = () => {
   );
 };
 
-export default AccountCard;
+export default CreditCard;

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Animated, Easing, Platform, StyleSheet } from 'react-native';
 import {
   PanGestureHandler,
@@ -6,16 +6,21 @@ import {
   PanGestureHandlerStateChangeEvent,
 } from 'react-native-gesture-handler';
 import Swiper from 'react-native-swiper';
+import { ThemeContext } from 'styled-components';
 
 import Header from '@components/Header';
 import Tabs from '@components/Tabs';
 import Menu from '@components/Menu';
+import CreditCard from '@components/CreditCard';
 import AccountCard from '@components/AccountCard';
 import RewardsCard from '@components/RewardsCard';
+import { ThemeValue } from '@theme';
 import { Container, Content, Cards } from './styles';
 
 export default function Main() {
   let offset = 0;
+  const { current: theme } = useContext<ThemeValue>(ThemeContext);
+  const [showCardsPagination, setShowCardsPagination] = useState<boolean>(true);
   const range = Platform.OS === 'ios' ? 460 : 470;
   const translateY = new Animated.Value(0);
   const animatedEvent = Animated.event(
@@ -29,8 +34,10 @@ export default function Main() {
     { useNativeDriver: true },
   );
 
-  const [showCardsPagination, setShowCardsPagination] = useState<boolean>(true);
-
+  /**
+   * Handler gesture state
+   * @param event
+   */
   const onHandlerStateChanged = (event: PanGestureHandlerStateChangeEvent) => {
     if (event.nativeEvent.state === State.ACTIVE) {
       setShowCardsPagination(false);
@@ -59,7 +66,6 @@ export default function Main() {
         offset = opened ? range : 0;
         translateY.setOffset(offset);
         translateY.setValue(0);
-        console.log('Offset:', offset);
         if (offset === 0) {
           setShowCardsPagination(true);
         }
@@ -106,10 +112,11 @@ export default function Main() {
             <Swiper
               loop={false}
               containerStyle={swiperStyles.container}
-              activeDotColor="#fff"
+              activeDotColor={theme.secondaryColor}
               dotStyle={swiperStyles.dotStyle}
               activeDotStyle={swiperStyles.activeDotStyle}
               showsPagination={showCardsPagination}>
+              <CreditCard />
               <AccountCard />
               <RewardsCard />
             </Swiper>

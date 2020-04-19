@@ -1,12 +1,13 @@
 import styled from 'styled-components/native';
-import {StyleSheet, Animated} from 'react-native';
+import { StyleSheet, Animated } from 'react-native';
+import { ThemeProps } from '@theme';
 
 export const Container = styled(Animated.View)`
   margin: 0 30px;
 `;
 
 export const Code = styled.View`
-  background: #fff;
+  background: ${(props: ThemeProps) => props.theme.current.secondaryColor};
   padding: 10px;
   align-self: center;
 `;
@@ -18,12 +19,13 @@ export const AccountInfo = styled.View`
 
 export const InfoText = styled.Text`
   font-size: 14px;
-  color: #fff;
+  color: ${(props: ThemeProps) => props.theme.current.primaryIconColor};
   margin-bottom: 4px;
+  font-family: ${(props: ThemeProps) => props.theme.current.regularFont};
 `;
 
 export const InfoTextStrong = styled.Text`
-  font-weight: bold;
+  font-family: ${(props: ThemeProps) => props.theme.current.boldFont};
 `;
 
 export const Nav = styled.View`
@@ -48,8 +50,9 @@ export const IconNavTextWrapper = styled.View`
 
 export const NavText = styled.Text`
   font-size: 15px;
-  color: #fff;
+  color: ${(props: ThemeProps) => props.theme.current.primaryIconColor};
   margin-left: 20px;
+  font-family: ${(props: ThemeProps) => props.theme.current.regularFont};
 `;
 
 export const SignOutButton = styled.TouchableOpacity`
@@ -63,7 +66,8 @@ export const SignOutButton = styled.TouchableOpacity`
 `;
 
 export const SignOutButtonText = styled.Text`
-  color: #fff;
+  color: ${(props: ThemeProps) => props.theme.current.primaryIconColor};
   font-weight: bold;
-  font-size: 13px;
+  font-size: 14px;
+  font-family: ${(props: ThemeProps) => props.theme.current.blackFont};
 `;

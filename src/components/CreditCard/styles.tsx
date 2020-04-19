@@ -28,15 +28,39 @@ export const CardContent = styled.View`
 `;
 
 export const Title = styled.Text`
-  font-size: 14px;
-  color: ${(props: ThemeProps) => props.theme.current.tertiaryTextColor};
-  font-family: ${(props: ThemeProps) => props.theme.current.regularFont};
+  font-size: 13px;
+  /* color: ${(props: ThemeProps) => props.theme.current.tertiaryTextColor}; */
+  color: #00b3d9;
+  font-family: ${(props: ThemeProps) => props.theme.current.blackFont};
+`;
+
+export const DescriptionStrong = styled.Text`
+  font-size: 32px;
+  margin-top: 2px;
+  font-weight: bold;
+  /* color: ${(props: ThemeProps) => props.theme.current.primaryTextColor}; */
+  color: #00b3d9;
 `;
 
 export const Description = styled.Text`
   font-size: 32px;
   margin-top: 2px;
+  /* color: ${(props: ThemeProps) => props.theme.current.primaryTextColor}; */
+  color: #00b3d9;
+`;
+
+export const SubTitle = styled.Text`
+  font-size: 15px;
+  margin-top: 2px;
   color: ${(props: ThemeProps) => props.theme.current.primaryTextColor};
+`;
+
+export const SubTitleStrong = styled.Text`
+  font-size: 15px;
+  margin-top: 2px;
+  font-weight: bold;
+  color: #97cb59;
+  /* color: ${(props: ThemeProps) => props.theme.current.primaryTextColor}; */
 `;
 
 export const CardFooter = styled.View`
@@ -55,8 +79,6 @@ export const AnnotationIconWrapper = styled.View`
 
 export const Annotation = styled.Text`
   font-size: 13px;
-  line-height: 15px;
   color: ${(props: ThemeProps) => props.theme.current.primaryTextColor};
   width: 60%;
-  font-family: ${(props: ThemeProps) => props.theme.current.regularFont};
 `;

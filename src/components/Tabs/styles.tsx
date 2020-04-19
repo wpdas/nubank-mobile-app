@@ -1,6 +1,7 @@
 import styled from 'styled-components/native';
-import {ScrollView} from 'react-native-gesture-handler';
-import {Animated} from 'react-native';
+import { ScrollView } from 'react-native-gesture-handler';
+import { Animated } from 'react-native';
+import { ThemeProps } from '@theme';
 
 export const Container = styled(Animated.View)`
   height: 100px;
@@ -9,7 +10,7 @@ export const Container = styled(Animated.View)`
 
 export const TabsContainer = styled.ScrollView.attrs<ScrollView>({
   horizontal: true,
-  contentContainerStyle: {paddingLeft: 10, paddingRight: 20},
+  contentContainerStyle: { paddingLeft: 10, paddingRight: 20 },
   showsHorizontalScrollIndicator: false,
 })``;
 
@@ -25,5 +26,5 @@ export const TabItem = styled.View`
 
 export const TabText = styled.Text`
   font-size: 13px;
-  color: #fafafa;
+  color: ${(props: ThemeProps) => props.theme.current.secondaryColor};
 `;
