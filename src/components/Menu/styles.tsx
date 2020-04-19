@@ -43,6 +43,14 @@ export const NavItem = styled.View`
   border-bottom-color: rgba(255, 255, 255, 0.8);
 `;
 
+export const NavItemTouchableButton = styled.TouchableOpacity`
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom-width: ${StyleSheet.hairlineWidth}px;
+  border-bottom-color: rgba(255, 255, 255, 0.8);
+`;
+
 export const IconNavTextWrapper = styled.View`
   flex: 1;
   flex-direction: row;

@@ -1,8 +1,9 @@
 import React, { useContext } from 'react';
 import Icon from 'react-native-vector-icons/SimpleLineIcons';
-import CardContainer from '@components/CardContainer';
 import { ThemeContext } from 'styled-components';
+import CardContainer from '@components/CardContainer';
 import { ThemeValue } from '@theme';
+import { translate } from '@locale';
 import {
   CardHeader,
   CardContent,
@@ -22,15 +23,14 @@ const RewardsCard: React.FC = () => {
         <Icon name="present" size={22} color={theme.tertiaryIconColor} />
       </CardHeader>
       <CardContent>
-        <Title>Nubank Rewards</Title>
-        <Description>
-          Acumule pontos que nunca expiram e troque por passagens aéreas ou
-          serviços que você realmente usa.
-        </Description>
+        <Title>{translate('nubank_rewards_title')}</Title>
+        <Description>{translate('nubank_rewards_description')}</Description>
       </CardContent>
       <CardFooter>
         <ActiveButton>
-          <ActiveButtonText>ATIVE O SEU REWARDS</ActiveButtonText>
+          <ActiveButtonText>
+            {translate('nubank_rewards_actionButton')}
+          </ActiveButtonText>
         </ActiveButton>
       </CardFooter>
     </CardContainer>

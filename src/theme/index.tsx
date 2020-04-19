@@ -45,7 +45,7 @@ type Props = {
   children: React.ReactNode;
 };
 
-const Theme = ({ children }: Props) => {
+const Theme: React.FC<Props> = ({ children }: Props) => {
   return <ThemeProvider theme={defaultValue}>{children}</ThemeProvider>;
 };
 

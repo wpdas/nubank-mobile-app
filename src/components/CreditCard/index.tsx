@@ -3,6 +3,7 @@ import Icon from 'react-native-vector-icons/SimpleLineIcons';
 import { ThemeContext } from 'styled-components';
 import CardContainer from '@components/CardContainer';
 import { ThemeValue } from '@theme';
+import { translate } from '@locale';
 import {
   CreditCardMainContent,
   CreditCardInfoArea,
@@ -38,16 +39,17 @@ const CreditCard: React.FC = () => {
                 size={22}
                 color={theme.tertiaryIconColor}
               />
-              <IconText>Cartão de crédito</IconText>
+              <IconText>{translate('credit_card')}</IconText>
             </IconContainer>
           </CardHeader>
           <CardContent>
-            <Title>FATURA ATUAL</Title>
+            <Title>{translate('opened_invoice')}</Title>
             <Description>
-              R$ <DescriptionStrong>1.439</DescriptionStrong>,17
+              R$ <DescriptionStrong>714</DescriptionStrong>,75
             </Description>
             <SubTitle>
-              Limite disponível <SubTitleStrong>R$ 126,17</SubTitleStrong>
+              {translate('available_limit')}{' '}
+              <SubTitleStrong>R$ 126,17</SubTitleStrong>
             </SubTitle>
           </CardContent>
         </CreditCardInfoArea>
@@ -61,9 +63,7 @@ const CreditCard: React.FC = () => {
         <AnnotationIconWrapper>
           <Icon name="cup" size={22} color={theme.primaryTextColor} />
         </AnnotationIconWrapper>
-        <Annotation>
-          Compra mais recente Starbucks Belo Horizonte no valor de R$ 12,86.
-        </Annotation>
+        <Annotation>{translate('recent_buy_description')}</Annotation>
         <AnnotationIconWrapper>
           <Icon name="arrow-right" size={10} color={theme.tertiaryIconColor} />
         </AnnotationIconWrapper>

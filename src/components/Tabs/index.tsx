@@ -3,6 +3,7 @@ import { Animated } from 'react-native';
 import Icon from 'react-native-vector-icons/SimpleLineIcons';
 import { ThemeContext } from 'styled-components';
 import { ThemeValue } from '@theme';
+import { translate } from '@locale';
 import { Container, TabsContainer, TabItem, TabText } from './styles';
 
 interface TabsProps {
@@ -39,7 +40,7 @@ const Tabs: React.FC<TabsProps> = ({ translateY }) => {
       <TabsContainer>
         <TabItem>
           <Icon name="user-follow" size={22} color={theme.secondaryIconColor} />
-          <TabText>Indicar amigos</TabText>
+          <TabText>{translate('invite_friends')}</TabText>
         </TabItem>
         <TabItem>
           <Icon
@@ -47,11 +48,11 @@ const Tabs: React.FC<TabsProps> = ({ translateY }) => {
             size={22}
             color={theme.secondaryIconColor}
           />
-          <TabText>Recarga de celular</TabText>
+          <TabText>{translate('phone_recharge')}</TabText>
         </TabItem>
         <TabItem>
           <Icon name="bubbles" size={22} color={theme.secondaryIconColor} />
-          <TabText>Cobrar</TabText>
+          <TabText>{translate('cash_in')}</TabText>
         </TabItem>
         <TabItem>
           <Icon
@@ -59,7 +60,7 @@ const Tabs: React.FC<TabsProps> = ({ translateY }) => {
             size={22}
             color={theme.secondaryIconColor}
           />
-          <TabText>Depositar</TabText>
+          <TabText>{translate('deposit')}</TabText>
         </TabItem>
         <TabItem>
           <Icon
@@ -67,7 +68,7 @@ const Tabs: React.FC<TabsProps> = ({ translateY }) => {
             size={22}
             color={theme.secondaryIconColor}
           />
-          <TabText>Transferir</TabText>
+          <TabText>{translate('transfer')}</TabText>
         </TabItem>
         <TabItem>
           <Icon
@@ -76,27 +77,27 @@ const Tabs: React.FC<TabsProps> = ({ translateY }) => {
             color={theme.secondaryIconColor}
             style={adjustLimitStyle}
           />
-          <TabText>Ajustar limite</TabText>
+          <TabText>{translate('adjust_limit')}</TabText>
         </TabItem>
         <TabItem>
           <Icon name="question" size={22} color={theme.secondaryIconColor} />
-          <TabText>Me Ajuda</TabText>
+          <TabText>{translate('help')}</TabText>
         </TabItem>
         <TabItem>
           <Icon name="grid" size={22} color={theme.secondaryIconColor} />
-          <TabText>Pagar</TabText>
+          <TabText>{translate('pay')}</TabText>
         </TabItem>
         <TabItem>
           <Icon name="lock-open" size={22} color={theme.secondaryIconColor} />
-          <TabText>Bloquear cartão</TabText>
+          <TabText>{translate('block_card')}</TabText>
         </TabItem>
         <TabItem>
           <Icon name="credit-card" size={22} color={theme.secondaryIconColor} />
-          <TabText>Cartão virtual</TabText>
+          <TabText>{translate('virtual_card')}</TabText>
         </TabItem>
         <TabItem>
           <Icon name="list" size={22} color={theme.secondaryIconColor} />
-          <TabText>Organizar atalhos</TabText>
+          <TabText>{translate('organize_shortcuts')}</TabText>
         </TabItem>
       </TabsContainer>
     </Container>

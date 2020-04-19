@@ -3,6 +3,7 @@ import Icon from 'react-native-vector-icons/SimpleLineIcons';
 import { ThemeContext } from 'styled-components';
 import CardContainer from '@components/CardContainer';
 import { ThemeValue } from '@theme';
+import { translate } from '@locale';
 import {
   CardHeader,
   IconContainer,
@@ -23,21 +24,19 @@ const AccountCard: React.FC = () => {
       <CardHeader>
         <IconContainer>
           <Icon name="wallet" size={22} color={theme.tertiaryIconColor} />
-          <IconText>Conta</IconText>
+          <IconText>{translate('account')}</IconText>
         </IconContainer>
         <Icon name="eye" size={22} color={theme.tertiaryIconColor} />
       </CardHeader>
       <CardContent>
-        <Title>Saldo disponível</Title>
+        <Title>{translate('available_balance')}</Title>
         <Description>R$ 1.439,17</Description>
       </CardContent>
       <CardFooter>
         <AnnotationIconWrapper>
           <Icon name="arrow-down-circle" size={22} color={theme.primaryColor} />
         </AnnotationIconWrapper>
-        <Annotation>
-          Transferência de R$ 20,00 recebida hoje de Dayane Gandos
-        </Annotation>
+        <Annotation>{translate('last_account_action_description')}</Annotation>
         <AnnotationIconWrapper>
           <Icon name="arrow-right" size={10} color={theme.tertiaryIconColor} />
         </AnnotationIconWrapper>

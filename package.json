@@ -9,6 +9,8 @@
     "lint": "tslint --project tsconfig.json --format verbose"
   },
   "dependencies": {
+    "@types/i18n-js": "^3.0.2",
+    "i18n-js": "^3.5.1",
     "react": "16.11.0",
     "react-native": "0.62.2",
     "react-native-gesture-handler": "^1.6.1",
