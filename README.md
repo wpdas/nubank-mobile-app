@@ -6,7 +6,7 @@ Mobile app developed using React Native. This application is based on the Nubank
 
 Project developed using TypeScript and some packages for implementing features in the app like i18n (internationalization), styled-components. I'm also using tools for code quality, build and compiler, they are tslint, prettier, tslint-react, babel and others. Dynamic Context APIs was used to create Theme and Locate Provider components (internationalization).
 
-**Native resources:** Animation, Easing, StyleSheet, Gesture Handler, Swiper, Navigation, QRCode, Vector Icons, Svg, entre outros;</br>
+**Native resources:** Animation, Easing, StyleSheet, Gesture Handler, Swiper, Navigation, QRCode, Vector Icons, Svg, and others;</br>
 **React APIs:** createContext, useContext, useState;</br>
 **Third-party:** styled-components and i18n.</br>
 **Font:** NunitoSans
