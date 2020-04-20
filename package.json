@@ -9,7 +9,6 @@
     "lint": "tslint --project tsconfig.json --format verbose"
   },
   "dependencies": {
-    "@types/i18n-js": "^3.0.2",
     "i18n-js": "^3.5.1",
     "react": "16.11.0",
     "react-native": "0.62.2",
@@ -20,18 +19,17 @@
     "react-native-swiper": "^1.6.0",
     "react-native-vector-icons": "^6.6.0",
     "react-navigation": "^4.3.7",
-    "reactotron-react-native": "^5.0.0",
     "styled-components": "^5.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-typescript": "^7.9.0",
     "@babel/runtime": "^7.9.2",
+    "@types/i18n-js": "^3.0.2",
     "@types/react": "^16.9.34",
     "@types/react-native": "^0.62.2",
     "@types/react-native-vector-icons": "^6.4.5",
     "@types/styled-components": "^5.1.0",
-    "babel-eslint": "^10.1.0",
     "babel-plugin-module-resolver": "^4.0.0",
     "babel-plugin-root-import": "^6.5.0",
     "metro-react-native-babel-preset": "^0.59.0",

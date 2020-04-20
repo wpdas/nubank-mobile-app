@@ -1,49 +1,49 @@
 # Nubank Mobile App (React Native) - Replica
 
-Mobile app developed using React Native. This application is based on the Nubank user interface (Brazilian company) and was made from scratch.
+Aplicativo mobile desenvolvido usando React Native. Este aplicativo é baseado na interface do Nubank (empresa brasileira) e foi feito do zero.
 
-Project developed using TypeScript and some packages for implementing features in the app like i18n (internationalization), styled-components. I'm also using tools for code quality, build and compiler, they are tslint, prettier, tslint-react, babel and others. Dynamic Context APIs was used to create Theme and Locate Provider components (internationalization).
+Para este projeto foi utilizado o TypeScript como linguagem base, packages para implementação de recursos no app como i18n (internacionalização), styled-components e ferramentas para qualidade de código, build and compilador, são eles tslint, prettier, tslint-react, babel entre outros. Foi utilizado o Context API dinamicos para criar componentes Providers de Tema e Locate (internacionalização).
 
-Native resources: Animation, Easing, StyleSheet, Gesture Handler, Swiper, Navigation, QRCode, Vector Icons, Svg, entre outros;
+Recursos nativos: Animation, Easing, StyleSheet, Gesture Handler, Swiper, Navigation, QRCode, Vector Icons, Svg, entre outros;
 React APIs: createContext, useContext, useState;
 Third-party: styled-components and i18n.
-Font: NunitoSans
+Fonte: NunitoSans
 
 ### Demo GIF
 
 ![Demo](https://wendersonpdas-public-github-files.s3-us-west-2.amazonaws.com/nubank_reactnative_app.gif)
 
-## Why
+## Porque
 
-My interest in developing this project started after seeing the wonderful work of [@ildaneta](https://github.com/ildaneta) through LinkedIn and I also took advantage of the period at home during the Covid-19 pandemic to put certain projects into practice.
+Tive o interesse em desenvolver este projeto após ver o trabalho maravilhoso da [@ildaneta](https://github.com/ildaneta) através do LinkedIn e também aproveitei o período em casa durante a pandemia do COVID para colocar certos projetos em prática.
 
-## How to use
+## Como usar
 
-After cloning the repository, run the following commands:
+Após clonar o repositório, faça os seguintes comandos:
 
 ```bash
-# Updates the required packages and dependencies:
+# Para atualizar os pacotes e dependências necessárias:
 yarn
 ```
 
 ```bash
-# Runs the project
+# Para rodar o projeto:
 yarn start
 ```
 
 ```bash
-# Runs the app on an Android Device / Emulator
+# Rodar num emulador / dispositivo Android:
 yarn android
 ```
 
 ```bash
-# Runs the app on an iOS simulator
+# Rodar em simulador iOS:
 yarn ios
 ```
 
-## Good to know
+## Bom saber
 
-The bases for the TypeScript import function are configured in the `tsconfig.json` and`babel.config.js` files:
+Bases para TypeScript configurado nos arquivos `tsconfig.json` e `babel.config.js`:
 
 ```json
 "@components/*": "src/components/*",
@@ -52,7 +52,7 @@ The bases for the TypeScript import function are configured in the `tsconfig.jso
 "@locale": "src/locale/index.tsx"
 ```
 
-### Helpful content:
+### Conteúdo útil:
 
 - [Nubank Design material - Andrea & André](https://www.behance.net/gallery/42918779/Nubank)
 - [Nunito Sans - Google Fonts](https://fonts.google.com/specimen/Nunito+Sans)
@@ -65,6 +65,6 @@ The bases for the TypeScript import function are configured in the `tsconfig.jso
 - [Icons - Simple Line Icons](https://simplelineicons.github.io/)
 - [Setup custon fonts - Tamas Szikszai](https://medium.com/better-programming/using-custom-fonts-in-react-native-2019-289099609837)
 
-## Author
+## Autor
 
 [Wenderson Pires - Linkedin](https://www.linkedin.com/in/wenderson-pires-silva/)

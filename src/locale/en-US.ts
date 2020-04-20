@@ -16,7 +16,7 @@ const enUS: LanguageData = {
   opened_invoice: 'OPENED INVOICE',
   available_limit: 'Available limit',
   recent_buy_description:
-    'Most recent purchase at Starbucks Belo Horizonte in the amount of R$ 12,86.',
+    'Most recent purchase at Starbucks BH in the amount of R$ 12,86.',
   account: 'Account',
   available_balance: 'Available balance',
   last_account_action_description:

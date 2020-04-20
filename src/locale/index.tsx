@@ -1,5 +1,5 @@
 import React, { createContext, useState } from 'react';
-import i18n, { Scope } from 'i18n-js';
+import i18n from 'i18n-js';
 
 import en from './en-US';
 import pt from './pt-BR';
