@@ -1,6 +1,6 @@
 # Nubank Mobile App (React Native) - Replica
 
-[Conteúdo em Inglês](https://github.com/Wpdas/nubank-rocketseat#nubank-mobile-app-react-native---replica)
+[Conteúdo em Inglês](https://github.com/Wpdas/nubank-mobile-app#nubank-mobile-app-react-native---replica)
 
 Aplicativo mobile desenvolvido usando React Native. Este aplicativo é baseado na interface do Nubank (empresa brasileira) e foi feito do zero.
 
@@ -14,6 +14,7 @@ Para este projeto foi utilizado o TypeScript como linguagem base, packages para 
 ### Demo GIF :art:
 
 ![Demo](https://wendersonpdas-public-github-files.s3-us-west-2.amazonaws.com/nubank_reactnative_app.gif)
+[Ver vídeo](https://drive.google.com/open?id=1JbPIVygvmJniuumozQlAVqfuaJC94HbI)
 
 ## Porque :interrobang:
 
@@ -45,7 +46,7 @@ yarn ios
 
 ## Bom saber :green_book:
 
-Bases para TypeScript configurado nos arquivos `tsconfig.json` e `babel.config.js`:
+As bases para a função de import do TypeScript estão configuradas nos arquivos `tsconfig.json` e `babel.config.js`:
 
 ```json
 "@components/*": "src/components/*",
@@ -67,6 +68,6 @@ Bases para TypeScript configurado nos arquivos `tsconfig.json` e `babel.config.j
 - [Icons - Simple Line Icons](https://simplelineicons.github.io/)
 - [Setup custon fonts - Tamas Szikszai](https://medium.com/better-programming/using-custom-fonts-in-react-native-2019-289099609837)
 
-## Autor :simple_smile:
+## Autor :bowtie:
 
 [Wenderson Pires - Linkedin](https://www.linkedin.com/in/wenderson-pires-silva/)
