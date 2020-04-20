@@ -11,16 +11,16 @@ Para este projeto foi utilizado o TypeScript como linguagem base, packages para 
 **Third-party:** styled-components and i18n.</br>
 **Fonte:** NunitoSans
 
-### Demo GIF :art:
+### :art: Demo GIF
 
-![Demo](https://wendersonpdas-public-github-files.s3-us-west-2.amazonaws.com/nubank_reactnative_app.gif)
+![Demo](https://wendersonpdas-public-github-files.s3-us-west-2.amazonaws.com/nubank_reactnative_app.gif)</br>
 [Ver vídeo](https://drive.google.com/open?id=1JbPIVygvmJniuumozQlAVqfuaJC94HbI)
 
-## Porque :interrobang:
+## :interrobang: Porque
 
 Tive o interesse em desenvolver este projeto após ver o trabalho maravilhoso da [@ildaneta](https://github.com/ildaneta) através do LinkedIn e também aproveitei o período em casa durante a pandemia do COVID para colocar certos projetos em prática.
 
-## Como usar :mortar_board:
+## :mortar_board: Como usar
 
 Após clonar o repositório, faça os seguintes comandos:
 
@@ -44,7 +44,7 @@ yarn android
 yarn ios
 ```
 
-## Bom saber :green_book:
+## :green_book: Bom saber
 
 As bases para a função de import do TypeScript estão configuradas nos arquivos `tsconfig.json` e `babel.config.js`:
 
@@ -55,7 +55,7 @@ As bases para a função de import do TypeScript estão configuradas nos arquivo
 "@locale": "src/locale/index.tsx"
 ```
 
-## Conteúdo útil :mag:
+## :mag: Conteúdo útil
 
 - [Nubank Design material - Andrea & André](https://www.behance.net/gallery/42918779/Nubank)
 - [Nunito Sans - Google Fonts](https://fonts.google.com/specimen/Nunito+Sans)
@@ -68,6 +68,6 @@ As bases para a função de import do TypeScript estão configuradas nos arquivo
 - [Icons - Simple Line Icons](https://simplelineicons.github.io/)
 - [Setup custon fonts - Tamas Szikszai](https://medium.com/better-programming/using-custom-fonts-in-react-native-2019-289099609837)
 
-## Autor :bowtie:
+## :bowtie: Autor
 
 [Wenderson Pires - Linkedin](https://www.linkedin.com/in/wenderson-pires-silva/)
