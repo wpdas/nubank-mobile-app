@@ -38,7 +38,7 @@ const defaultValue: ThemeValue = {
 };
 
 /** Props to be used within styles */
-export type ThemeProps = ThemedStyledProps<any, ThemeValue>;
+export type ThemeProps = ThemedStyledProps<{}, ThemeValue>;
 
 /** Theme component props */
 type Props = {

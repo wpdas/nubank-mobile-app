@@ -36,7 +36,6 @@ export default function Main() {
 
   /**
    * Handler gesture state
-   * @param event
    */
   const onHandlerStateChanged = (event: PanGestureHandlerStateChangeEvent) => {
     if (event.nativeEvent.state === State.ACTIVE) {

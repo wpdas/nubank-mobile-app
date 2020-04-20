@@ -1,8 +1,8 @@
 import React, { createContext, useState } from 'react';
-import i18n from 'i18n-js';
+import I18n from 'i18n-js';
 
-import en from './en-US';
-import pt from './pt-BR';
+import enUS from './en-US';
+import ptBR from './pt-BR';
 
 export interface LanguageData {
   invite_friends: string;
@@ -36,21 +36,20 @@ export interface LanguageData {
 }
 
 // Set languages
-i18n.translations = {
-  en_US: en,
-  pt_BR: pt,
+I18n.translations = {
+  en_US: enUS,
+  pt_BR: ptBR,
 };
 
 // Set default language
-i18n.locale = 'pt_BR';
+I18n.locale = 'pt_BR';
 
 export type SupportedLanguages = 'en_US' | 'pt_BR';
 
 /**
  * Get prop data by key
- * @param languageItemKey
  */
-export const translate = (languageItemKey: string) => i18n.t(languageItemKey);
+export const translate = (languageItemKey: string) => I18n.t(languageItemKey);
 
 export type LocaleContextValue = {
   language: SupportedLanguages;
@@ -59,7 +58,9 @@ export type LocaleContextValue = {
 
 const defaultValue: LocaleContextValue = {
   language: 'pt_BR',
-  toggleLanguage: () => {},
+  toggleLanguage: () => {
+    throw new Error('toggleLanguage method must be set');
+  },
 };
 
 const LocaleContext = createContext<LocaleContextValue>(defaultValue);
@@ -73,9 +74,9 @@ export const LocaleProvider: React.FC<Props> = ({ children }: Props) => {
   const [language, setLanguage] = useState<SupportedLanguages>('pt_BR');
 
   const toggleLanguage = () => {
-    const newLanguage = language == 'pt_BR' ? 'en_US' : 'pt_BR';
+    const newLanguage = language === 'pt_BR' ? 'en_US' : 'pt_BR';
     setLanguage(newLanguage);
-    i18n.locale = newLanguage;
+    I18n.locale = newLanguage;
   };
 
   return (
