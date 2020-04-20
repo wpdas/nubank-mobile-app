@@ -14,7 +14,7 @@ Project developed using TypeScript and some packages for implementing features i
 ### :art: Demo GIF
 
 ![Demo](https://wendersonpdas-public-github-files.s3-us-west-2.amazonaws.com/nubank_reactnative_app_2.gif)</br>
-[Watch the vídeo](https://drive.google.com/open?id=1JbPIVygvmJniuumozQlAVqfuaJC94HbI)
+[Watch the vídeo](https://drive.google.com/open?id=1F5cHaX9DcOC8FvKBc4SjbE8RLZaMe550)
 
 ## :interrobang: Why
 
