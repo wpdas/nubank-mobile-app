@@ -1,23 +1,25 @@
 # Nubank Mobile App (React Native) - Replica
 
+[Conteúdo em Inglês](https://github.com/Wpdas/nubank-rocketseat#nubank-mobile-app-react-native---replica)
+
 Aplicativo mobile desenvolvido usando React Native. Este aplicativo é baseado na interface do Nubank (empresa brasileira) e foi feito do zero.
 
 Para este projeto foi utilizado o TypeScript como linguagem base, packages para implementação de recursos no app como i18n (internacionalização), styled-components e ferramentas para qualidade de código, build and compilador, são eles tslint, prettier, tslint-react, babel entre outros. Foi utilizado o Context API dinamicos para criar componentes Providers de Tema e Locate (internacionalização).
 
-Recursos nativos: Animation, Easing, StyleSheet, Gesture Handler, Swiper, Navigation, QRCode, Vector Icons, Svg, entre outros;
-React APIs: createContext, useContext, useState;
-Third-party: styled-components and i18n.
-Fonte: NunitoSans
+**Recursos nativos:** Animation, Easing, StyleSheet, Gesture Handler, Swiper, Navigation, QRCode, Vector Icons, Svg, entre outros;</br>
+**React APIs:** createContext, useContext, useState;</br>
+**Third-party:** styled-components and i18n.</br>
+**Fonte:** NunitoSans
 
-### Demo GIF
+### Demo GIF :art:
 
 ![Demo](https://wendersonpdas-public-github-files.s3-us-west-2.amazonaws.com/nubank_reactnative_app.gif)
 
-## Porque
+## Porque :interrobang:
 
 Tive o interesse em desenvolver este projeto após ver o trabalho maravilhoso da [@ildaneta](https://github.com/ildaneta) através do LinkedIn e também aproveitei o período em casa durante a pandemia do COVID para colocar certos projetos em prática.
 
-## Como usar
+## Como usar :mortar_board:
 
 Após clonar o repositório, faça os seguintes comandos:
 
@@ -41,7 +43,7 @@ yarn android
 yarn ios
 ```
 
-## Bom saber
+## Bom saber :green_book:
 
 Bases para TypeScript configurado nos arquivos `tsconfig.json` e `babel.config.js`:
 
@@ -52,7 +54,7 @@ Bases para TypeScript configurado nos arquivos `tsconfig.json` e `babel.config.j
 "@locale": "src/locale/index.tsx"
 ```
 
-### Conteúdo útil:
+## Conteúdo útil :mag:
 
 - [Nubank Design material - Andrea & André](https://www.behance.net/gallery/42918779/Nubank)
 - [Nunito Sans - Google Fonts](https://fonts.google.com/specimen/Nunito+Sans)
@@ -65,6 +67,6 @@ Bases para TypeScript configurado nos arquivos `tsconfig.json` e `babel.config.j
 - [Icons - Simple Line Icons](https://simplelineicons.github.io/)
 - [Setup custon fonts - Tamas Szikszai](https://medium.com/better-programming/using-custom-fonts-in-react-native-2019-289099609837)
 
-## Autor
+## Autor :simple_smile:
 
 [Wenderson Pires - Linkedin](https://www.linkedin.com/in/wenderson-pires-silva/)

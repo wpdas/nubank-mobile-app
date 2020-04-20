@@ -1,23 +1,25 @@
 # Nubank Mobile App (React Native) - Replica
 
+[Content in Portuguese](https://github.com/Wpdas/nubank-rocketseat/blob/master/README_pt_BR.md)
+
 Mobile app developed using React Native. This application is based on the Nubank user interface (Brazilian company) and was made from scratch.
 
 Project developed using TypeScript and some packages for implementing features in the app like i18n (internationalization), styled-components. I'm also using tools for code quality, build and compiler, they are tslint, prettier, tslint-react, babel and others. Dynamic Context APIs was used to create Theme and Locate Provider components (internationalization).
 
-Native resources: Animation, Easing, StyleSheet, Gesture Handler, Swiper, Navigation, QRCode, Vector Icons, Svg, entre outros;
-React APIs: createContext, useContext, useState;
-Third-party: styled-components and i18n.
-Font: NunitoSans
+**Native resources:** Animation, Easing, StyleSheet, Gesture Handler, Swiper, Navigation, QRCode, Vector Icons, Svg, entre outros;</br>
+**React APIs:** createContext, useContext, useState;</br>
+**Third-party:** styled-components and i18n.</br>
+**Font:** NunitoSans
 
-### Demo GIF
+### Demo GIF :art:
 
 ![Demo](https://wendersonpdas-public-github-files.s3-us-west-2.amazonaws.com/nubank_reactnative_app.gif)
 
-## Why
+## Why :interrobang:
 
 My interest in developing this project started after seeing the wonderful work of [@ildaneta](https://github.com/ildaneta) through LinkedIn and I also took advantage of the period at home during the Covid-19 pandemic to put certain projects into practice.
 
-## How to use
+## How to use :mortar_board:
 
 After cloning the repository, run the following commands:
 
@@ -41,7 +43,7 @@ yarn android
 yarn ios
 ```
 
-## Good to know
+## Good to know :green_book:
 
 The bases for the TypeScript import function are configured in the `tsconfig.json` and`babel.config.js` files:
 
@@ -52,7 +54,7 @@ The bases for the TypeScript import function are configured in the `tsconfig.jso
 "@locale": "src/locale/index.tsx"
 ```
 
-### Helpful content:
+## Helpful content :mag:
 
 - [Nubank Design material - Andrea & André](https://www.behance.net/gallery/42918779/Nubank)
 - [Nunito Sans - Google Fonts](https://fonts.google.com/specimen/Nunito+Sans)
@@ -65,6 +67,6 @@ The bases for the TypeScript import function are configured in the `tsconfig.jso
 - [Icons - Simple Line Icons](https://simplelineicons.github.io/)
 - [Setup custon fonts - Tamas Szikszai](https://medium.com/better-programming/using-custom-fonts-in-react-native-2019-289099609837)
 
-## Author
+## Author :simple_smile:
 
 [Wenderson Pires - Linkedin](https://www.linkedin.com/in/wenderson-pires-silva/)
