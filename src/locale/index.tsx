@@ -17,7 +17,7 @@ export interface LanguageData {
   virtual_card: string;
   organize_shortcuts: string;
   credit_card: string;
-  opened_invoice: string;
+  current_invoice: string;
   available_limit: string;
   recent_buy_description: string;
   account: string;

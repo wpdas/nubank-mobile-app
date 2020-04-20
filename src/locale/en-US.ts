@@ -13,7 +13,7 @@ const enUS: LanguageData = {
   virtual_card: 'Virtual card',
   organize_shortcuts: 'Organize shortcuts',
   credit_card: 'Credit card',
-  opened_invoice: 'OPENED INVOICE',
+  current_invoice: 'CURRENT INVOICE',
   available_limit: 'Available limit',
   recent_buy_description:
     'Most recent purchase at Starbucks BH in the amount of R$ 12,86.',

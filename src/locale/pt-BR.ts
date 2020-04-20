@@ -13,7 +13,7 @@ const ptBR: LanguageData = {
   virtual_card: 'Cartão virtual',
   organize_shortcuts: 'Organizar atalhos',
   credit_card: 'Cartão de credito',
-  opened_invoice: 'FATURA ATUAL',
+  current_invoice: 'FATURA ATUAL',
   available_limit: 'Limite disponível',
   recent_buy_description:
     'Compra mais recente Starbucks Belo Horizonte no valor de R$ 12,86.',

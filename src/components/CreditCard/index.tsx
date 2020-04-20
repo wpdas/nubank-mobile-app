@@ -43,7 +43,7 @@ const CreditCard: React.FC = () => {
             </IconContainer>
           </CardHeader>
           <CardContent>
-            <Title>{translate('opened_invoice')}</Title>
+            <Title>{translate('current_invoice')}</Title>
             <Description>
               R$ <DescriptionStrong>714</DescriptionStrong>,75
             </Description>
